@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:calculator/models/calculator_model.dart';
 import 'package:calculator/services/calculator_service.dart';
 
@@ -32,8 +31,7 @@ class CalculatorApp {
     double num2 = _getDoubleInput();
 
     // Create the Calculator object and pass the values
-    Calculator calculator =
-        Calculator(num1: num1, num2: num2, operation: operation);
+    Calculator calculator = Calculator(num1: num1, num2: num2, operation: operation);
 
     // Calculate the result using the injected service
     try {
